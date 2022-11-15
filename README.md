@@ -1,4 +1,4 @@
-# quizzlet-app
+# quizzies-app
 My first app in React
 
 
