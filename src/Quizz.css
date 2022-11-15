@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400&display=swap');
+
+.quizz-container {
+  height: 90%;
+  width: 95%;
+  font-family: 'Karla', sans-serif;
+  font-weight: 200;
+  color: #293264;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 15px;
+  
+
+  
+}
+
+.question {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 200;
+}
+
+.question-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.question-btn {
+    width: auto;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    color: #293264;
+    font-family: 'Karla';
+    font-weight: 200;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #4D5B9E;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.question-btn:hover {
+  background-color: #D6DBF5;
+  color:white;
+  
+
+}
+
+.question-btn-active {
+  width: auto;
+    padding: 5px;
+    border: none;
+    background-color: #4D5B9E;
+    color: white;
+    font-family: 'Karla';
+    font-weight: 200;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #4D5B9E;
+    transition: ease 0.3s;
+    cursor: pointer;
+    
+  
+}
+
+.submit-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    color: #293264;
+    background-color: white;
+    border-radius: 20px;
+    
+    border: 1px solid;
+    border-color: #293264;
+    align-self: center;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #293264;
+  color:white;
+}
+
+.none {
+  display: none;
+}
+
+.completed-container {
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: inherit;
+  color:#293264;
+  font-weight: 200;
+  padding: 20px;
+  gap: 15px;
+}
+
+.completed-container > h1 {
+  font-size: 60px;
+}
+
+.try-again {
+  width: 160px;
+  height: 50px;
+  background-color: white;
+  color: #293264;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #293264;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: ease 0.4s;
+}
+
+.try-again:hover {
+  background-color: #293264;
+  color: white;
+}
