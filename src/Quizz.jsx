@@ -16,11 +16,9 @@ export default function Quizz() {
   useEffect(() => {
     //Called 2 times
 
-    console.log("first useeffect busted");
     (async () => {
       try {
         const res = await axios.get(url);
-        console.log("res", res);
 
         setData(res.data);
       } catch (error) {
@@ -29,14 +27,12 @@ export default function Quizz() {
     })();
   }, [url]);
 
-  //console.log(data[0].difficulty);
-
   useEffect(() => {
     //Called 4 times
-    console.log("second useEffect called bitch ahh nigg");
+
     if (Array.isArray(data) && data.length !== 0) {
       const newQ = [];
-      console.log("data", data);
+
       for (const [index, value] of data.entries()) {
         newQ.push({
           id: index,
@@ -49,8 +45,6 @@ export default function Quizz() {
       setQuestions(newQ);
     }
   }, [data]);
-
-  console.log("Rendered");
 
   function handleAnswer(questionId, answerId) {
     const indexOfQuestion = questions.findIndex((q) => q.id === questionId);
